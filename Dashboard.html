@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard: &#60;user name&#62;</title>
+    <link rel="stylesheet" type="tet/css" href="Dashboard.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script> </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!--HEADER-->
+      <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Dashboard: &#60;user name&#62;</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <!--MAIN BODY-->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="panel">
+            <div align="center">
+              <p><strong>Mr. Cool</strong></p>
+              <img src="nonexistent.jpg" height="150" width="150">
+              <p><strong>Following</strong></p>
+                <img src="nonexistent.jpg" height="50" width="50">
+                <img src="nonexistent.jpg" height="50" width="50">
+                <img src="nonexistent.jpg" height="50" width="50">
+              </p>
+              <p>
+                <img src="nonexistent.jpg" height="50" width="50">
+                <img src="nonexistent.jpg" height="50" width="50">
+                <img src="nonexistent.jpg" height="50" width="50">
+              </p>
+              <p>
+                <img src="nonexistent.jpg" height="50" width="50">
+                <img src="nonexistent.jpg" height="50" width="50">
+                <img src="nonexistent.jpg" height="50" width="50">
+              </p>
+              <p><strong>Followers</strong></p>
+              <p>
+                <img src="nonexistent.jpg" height="50" width="50">
+                <img src="nonexistent.jpg" height="50" width="50">
+                <img src="nonexistent.jpg" height="50" width="50">
+              </p>
+              <p>
+                <img src="nonexistent.jpg" height="50" width="50">
+                <img src="nonexistent.jpg" height="50" width="50">
+                <img src="nonexistent.jpg" height="50" width="50">
+              </p>
+              <p>
+                <img src="nonexistent.jpg" height="50" width="50">
+                <img src="nonexistent.jpg" height="50" width="50">
+                <img src="nonexistent.jpg" height="50" width="50">
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-9">
+          <ul class="nav nav-tabs">
+          <li class = "active"><a href="#home" data-toggle="tab">Update Feed</a></li>
+          <li><a href="#profile" data-toggle="tab">My Projects</a></li>
+          <li><a href="#messages" data-toggle="tab">Messages</a></li>
+        </ul>
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    Johnny Joe made changes to Face AIDS: Face AIDS Website Improvement
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Improved main page design and added pictures.</p>
+                  <p>Date: 10/30/2013</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                    Billy Bob added new project: Save the World
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>I'm planning to save the world, one step at a time!</p>
+                  <p>Date: 9/4/2013</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                    Molly created a new discussion: What is the best way to eat cheese?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>I've always wanted to know the best way to eat cheese. How do you guys do it?</p>
+                  <p>Date: 1/1/01</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--FOOTER-->
+      <div class="footer">
+        <p align="center">Site created by <a href="#">the wonderful people</a> of Code the Change~</p>
+      </div>
+
+    </div>
+  </body>
+
+</html>
