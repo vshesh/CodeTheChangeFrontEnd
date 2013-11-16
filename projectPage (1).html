@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ProjectPageMock</title>
+		<link href = "css/bootstrap.css" rel = "stylesheet">
+		<link href = "custom.css" rel = "stylesheet">
+	</head>
+
+	<body>
+		<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      		<div class="container">
+        		<div class="navbar-header">
+          			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            			<span class="sr-only">Toggle navigation</span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</button>
+          			<a class="navbar-brand" href="#">Code the Change</a>
+        		</div>
+        		<div class="collapse navbar-collapse">
+          			<ul class="nav navbar-nav">
+            			<li class="active"><a href="#">Home</a></li>
+            			<li><a href="#about">Profile</a></li>
+            			<li><a href="#contact">Projects</a></li>
+          			</ul>
+        		</div><!-- /.nav-collapse -->
+      		</div><!-- /.container -->
+    	</div><!-- /.navbar -->
+    	
+      <!-- Making usernames appear when mouseover images-->
+        <script>
+        function showUsername(x)
+        {
+        x.style.height="150px";
+        x.style.width="150px";
+        x.src = "userPopupImage.png";
+        }
+
+        function normalImg(x)
+        {
+        x.style.height="100px";
+        x.style.width="100px";
+        x.src = "faceImage2.jpg";
+        }
+        </script>
+
+      	<!-- Jumbotron -->
+    	<div class = "container">
+      	<div class="jumbotron" id = "daTitle" >
+        	<h1>ProjectName</h1>
+        	<p class="lead">Write a little blurb about your project</p>
+        	<div class="row">
+        		<div class="col-xs-4">
+        			<img onmouseover="showUsername(this)" onmouseout="normalImg(this)" src = "faceImage2.jpg" height = "100" width = "100" class="img-circle">
+        		</div>
+      			<div class="col-xs-4">
+        			<img onmouseover="showUsername(this)" onmouseout="normalImg(this)" src = "faceImage2.jpg" height = "100" width = "100" class="img-circle">
+        		</div>
+        		<div class="col-xs-4">
+       				<img onmouseover="showUsername(this)" onmouseout="normalImg(this)" src = "faceImage2.jpg" height = "100" width = "100" class="img-circle">
+       			</div>
+      		</div>
+      	</div>
+      	
+	      	<div class = "col-xs-8">
+	      		<h2>Technical Objectives:</h2>
+	      			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis ligula vel velit dictum scelerisque. Vivamus volutpat massa in lorem porttitor, in placerat elit hendrerit. Mauris tempor ipsum eget dolor tempor, sit amet volutpat purus elementum. Aenean odio mauris, tincidunt et lacinia sit amet, accumsan eu diam. Maecenas vitae purus sed ipsum vestibulum tempor. Fusce facilisis a erat ut scelerisque. Aenean porttitor placerat risus eget posuere. Duis eu ultrices odio, a faucibus tellus. Aenean adipiscing porta est, quis volutpat ligula vulputate eu. Pellentesque non erat ut arcu sollicitudin auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla tempus condimentum consequat. Sed ac pellentesque eros, in sagittis mi. Cras felis mi, convallis sit amet porttitor a, luctus a est.</p>
+	      		<h2>Project Objectives:</h2>
+	      			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis ligula vel velit dictum scelerisque. Vivamus volutpat massa in lorem porttitor, in placerat elit hendrerit. Mauris tempor ipsum eget dolor tempor, sit amet volutpat purus elementum. Aenean odio mauris, tincidunt et lacinia sit amet, accumsan eu diam. Maecenas vitae purus sed ipsum vestibulum tempor. Fusce facilisis a erat ut scelerisque. Aenean porttitor placerat risus eget posuere. Duis eu ultrices odio, a faucibus tellus. Aenean adipiscing porta est, quis volutpat ligula vulputate eu. Pellentesque non erat ut arcu sollicitudin auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla tempus condimentum consequat. Sed ac pellentesque eros, in sagittis mi. Cras felis mi, convallis sit amet porttitor a, luctus a est.</p>
+              <br>    
+
+	      			<div class = "row">
+	      				<a class="btn btn-primary btn-lg" role="button">Browse Similar Projects</a>
+	      				<a class="btn btn-primary btn-lg" role="button">Contribute Code</a>
+                <a class="btn btn-primary btn-lg" role="button">Join the Team</a>
+	      			</div>	
+	      	</div>
+	      	<div class = "col-xs-4">
+	      		<div id = "numbers">
+	      			<h1>24</h1>
+	      			<p>Days in progress</p>
+	      			<h1>47</h1>
+	      			<p>Git Commits</p>
+	      			<h1>12</h1>
+	      			<p>People Inolved</p>
+			</div>
+		</div>      
+	</body>
