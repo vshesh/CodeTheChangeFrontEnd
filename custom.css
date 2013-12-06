@@ -6,3 +6,15 @@
 	border-radius: 6px;
 	background-color: #eeeeee;
 }
+.projectBlurb{
+	border-radius:6px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #C1D1BD;
+	margin: 20px;
+	width: 25%;
+}
+a.Same:link { color: #000000; text-decoration: none}
+a.Same:visited { color: #000000; text-decoration: none}
+a.Same:hover { color: #000000; text-decoration: none}
+a.Same:active { color: #000000; text-decoration: none}
