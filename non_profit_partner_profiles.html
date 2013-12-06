@@ -6,52 +6,95 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-	<!--link to style sheets and javascript-->
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>    
 	<body>
-			<div class="jumbotron"> 
-			<h1 class="text-center">Non-Profit Partner Profiles </h1> </div>
-			<div class="container">
-			<div class="row"> 
-			<div class="col-xs-2"> 
-			<nav>
-			<ul class="nav nav-pills nav-stacked"> 
-				<li class="active"> <a href="#"> Categories </a></li> 
-				<li> <a href="#"> Women's Issues </a><li> 
-				<li> <a href="#"> Education </a><li> 
-				<li> <a href="#"> Healthcare </a><li> 
-				<li> <a href="#"> Poverty</a><li> 
-				</ul> </nav>
-			</div> 
-			<div class="col-xs-3">
-					<img src="img/anjna.jpeg" class="img-responsive" width="250" height="250" data-toggle="modal" data-target="#myModal"> 
-					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-   							 <div class="modal-content">
-      							<div class="modal-header">
-       								 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-       								 <h4 class="modal-title" id="myModalLabel">Anjna Patient Education</h4>
-       								 <div class="modal-body"> 
-       								 	<p> Anjna Patient Education is a nonprofit that seeks to empower the health of low income communities through SMS technologies </p>  
-       								 	<h4> List of Projects </h4>
-       								 		<p> FitBit Integration </p> 
-       								 		<p> Redesign UI for landing page </p>  
-       								 </div> 
-       							</div>
-       						</div> 
-       					</div> 
-       				</div> 
-			</div>
-			<div class="col-xs-3"> <img src="img/WWF.png" width="250" height="250" class="img-responsive"> </div> 
-			<div class="col-xs-3"> <img src="img/2.jpg" width="250" height="250" class="img-responsive"> </div>
-		</div>
-			<div class="row"> 
-				<div class="col-xs-2"> </div>
-			<div class="col-xs-3"> <img src="img/bumi-logo-for-web.jpg" class="img-responsive" width="250" height="250"></div>
-			<div class="col-xs-3"> <img src="img/GOTR_logo.jpg" class="img-responsive" width="250" height="250"></div> 
-			<div class="col-xs-3"> <img src="img/nonprofit_prev.jpg" class="img-responsive" width="250" height="250"> </div>
-			</div> 
-		</div>
+	    <!--HEADER-->
+    <nav class="navbar navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Code The Change</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="Dashboard.html">Home</a></li>
+          <li><a href="non_profit_partner_profiles.html">Partners</a></li>
+          <li><a href="#">Projects</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+
+
+	<div class="jumbotron"> 
+	<h1 class="text-center">Non-Profit Partner Profiles </h1> </div>
+	<div class="container">
+	<div class="row"> 
+	<div class="col-xs-2"> 
+	<nav>
+	<ul class="nav nav-pills nav-stacked"> 
+		<li class="active"> <a href="#"> Categories </a></li> 
+		<li> <a href="#"> Women's Issues </a><li> 
+		<li> <a href="#"> Education </a><li> 
+		<li> <a href="#"> Healthcare </a><li> 
+		<li> <a href="#"> Poverty</a><li> 
+		</ul> </nav>
+	</div> 
+	<div class="col-xs-3">
+			<img src="img/anjna.jpeg" class="img-responsive" width="250" height="250" data-toggle="modal" data-target="#myModal"> 
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+						 <div class="modal-content">
+							<div class="modal-header">
+								 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								 <h4 class="modal-title" id="myModalLabel">Anjna Patient Education</h4>
+								 <div class="modal-body"> 
+								 	<p> Anjna Patient Education is a nonprofit that seeks to empower the health of low income communities through SMS technologies </p>  
+								 	<h4> List of Projects </h4>
+								 		<p><a href="projectPage.html">FitBit Integration</a></p> 
+								 		<p> Redesign UI for landing page </p>  
+								 </div> 
+							</div>
+						</div> 
+					</div> 
+				</div> 
+	</div>
+	<div class="col-xs-3"> <img src="img/WWF.png" width="250" height="250" class="img-responsive"> </div> 
+	<div class="col-xs-3"> <img src="img/2.jpg" width="250" height="250" class="img-responsive"> </div>
+</div>
+	<div class="row"> 
+		<div class="col-xs-2"> </div>
+	<div class="col-xs-3"> <img src="img/bumi-logo-for-web.jpg" class="img-responsive" width="250" height="250"></div>
+	<div class="col-xs-3"> <img src="img/GOTR_logo.jpg" class="img-responsive" width="250" height="250"></div> 
+	<div class="col-xs-3"> <img src="img/nonprofit_prev.jpg" class="img-responsive" width="250" height="250"> </div>
+	</div> 
+</div>
 </html>
