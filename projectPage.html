@@ -20,15 +20,17 @@
       //};
       xhr.send("{ \"title\": \"Interesting Project\",\n  \"github\": \"https://github.com/rbedi/ctc-internal-backend/\",\n  \"organization\": \"Code the Change\",\n  \"description\": \"What a cool project!\"\n  \"tags\": [ \"fun\", \"coding\", \"life\" ]\n}");
       var xhr = new XMLHttpRequest();
-      xhr.open("GET", "http://rishibedi.apiary.io/project/all{?tag}");
+      xhr.open("GET", "http://rishibedi.apiary.io/project/42");
       xhr.onreadystatechange = function () {
         if (this.readyState == 4) {
+          var obj = jQuery.parseJSON(this.responseText);
+          console.log(obj);
           alert('Status: '+this.status+'\nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'\nBody: '+this.responseText);
         }
       };
       xhr.send(null);
+      //alert(obj.title);
       </script>
-
       <nav class="navbar navbar-default" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -77,7 +79,7 @@
 
       <!-- Jumbotron -->
       <div class = "container">
-      	<div class="jumbotron" id = "daTitle" >
+        <div class="jumbotron" id = "daTitle" >
          <h1>ProjectName</h1>
          <p class="lead">Write a little blurb about your project</p>
        </div>
@@ -406,7 +408,7 @@
                     <br>
                     
                     
-                  </div>	
+                  </div>        
 
                 </div>
 
