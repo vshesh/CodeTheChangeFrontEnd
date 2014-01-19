@@ -25,9 +25,10 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="non_profit_partner_profiles.html">Partners</a></li>
           <li><a href="allProjects.html">Projects</a></li>
+          <li class="active"><a href="projectCreate.html">Create New Project</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -68,6 +69,20 @@
             <input type="text" class="form-control" placeholder="Enter a title for your project.">
           </div>
 
+          <h3>Image</h3>
+          <div>
+            <img height="100" width="100" align="left" hspace="10">
+            <p>Minimum image size: 640x480 pixels</p>
+            <p>Maximum file size: 50 MB</p>
+            <button type="button" class="btn">Upload</button>
+          </div>
+
+          <h3>Category</h3>
+          <div class="input-group, input-large">
+            <input type="text" class="form-control" placeholder="Enter a category...">
+            <!--Ideally: when you type something, autocomplete will search for a pre-existing category. When you have entered a category that doesn't exist, website will try to find a category that is not there, and otherwise will produce a warning.-->
+          </div>
+
           <h3>Github Page</h3>
           <div class="input-group, input-large">
             <input type="text" class="form-control" placeholder="Enter a Github page for your project if it exists.">
@@ -78,10 +93,14 @@
             <input type="text" class="form-control" placeholder="Enter a name for your organization.">
           </div>
 
+          <h3>People Involved</h3>
+          <div class="input-group, input-large">
+            <input type="text" class="form-control" placeholder="Enter others who are involved with this project.">
+          </div>
+
           <h3>Description</h3>
           <div class="input-group, input-large">
             <textarea class="form-control" rows="5" placeholder="Enter a description. What do you plan to achieve with this project?"></textarea>
-
           </div>
 
           <h3>Tags</h3>
@@ -93,10 +112,6 @@
 
           <!--To add:
           -Category
-          -Project image
-          -Project video (optional)
-          -Organization description?
-          -
 
 
           -->
