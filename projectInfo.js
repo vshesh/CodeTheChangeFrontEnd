@@ -1,0 +1,20 @@
+var xhr = new XMLHttpRequest();
+  xhr.open("POST", "http://rishibedi.apiary.io/project");
+  xhr.setRequestHeader("Content-Type", "application/json");
+      //xhr.onreadystatechange = function () {
+        //if (this.readyState == 4) {
+        //  alert('Status: '+this.status+'\nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'\nBody: '+this.responseText);
+       // }
+      //};
+      xhr.send("{ \"title\": \"Interesting Project\",\n  \"github\": \"https://github.com/rbedi/ctc-internal-backend/\",\n  \"organization\": \"Code the Change\",\n  \"description\": \"What a cool project!\"\n  \"tags\": [ \"fun\", \"coding\", \"life\" ]\n}");
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "http://rishibedi.apiary.io/project/42");
+      xhr.onreadystatechange = function () {
+        if (this.readyState == 4) {
+          var obj = jQuery.parseJSON(this.responseText);
+          console.log(obj);
+          alert('Status: '+this.status+'\nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'\nBody: '+this.responseText);
+        }
+      };
+      xhr.send(null);
+      //alert(obj.title);
