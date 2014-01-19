@@ -9,10 +9,12 @@ var xhr = new XMLHttpRequest();
       xhr.send("{ \"title\": \"Interesting Project\",\n  \"github\": \"https://github.com/rbedi/ctc-internal-backend/\",\n  \"organization\": \"Code the Change\",\n  \"description\": \"What a cool project!\"\n  \"tags\": [ \"fun\", \"coding\", \"life\" ]\n}");
       var xhr = new XMLHttpRequest();
       xhr.open("GET", "http://rishibedi.apiary.io/project/42");
+      var obj;
       xhr.onreadystatechange = function () {
         if (this.readyState == 4) {
-          var obj = jQuery.parseJSON(this.responseText);
+          obj = jQuery.parseJSON(this.responseText);
           console.log(obj);
+          document.getElementById("projectTitle").innerHTML = obj.title;
           alert('Status: '+this.status+'\nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'\nBody: '+this.responseText);
         }
       };
