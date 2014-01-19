@@ -15,6 +15,8 @@ var xhr = new XMLHttpRequest();
           obj = jQuery.parseJSON(this.responseText);
           console.log(obj);
           document.getElementById("projectTitle").innerHTML = obj.title;
+          document.getElementById("technicalObjectives").innerHTML = obj.description;
+          document.getElementById("gitHub").innerHTML = "<a href="+obj.github+">Github</a>";
           alert('Status: '+this.status+'\nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'\nBody: '+this.responseText);
         }
       };
