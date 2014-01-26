@@ -25,7 +25,7 @@
         <div class="col-md-8">
           <h3>Title</h3>
           <div class="input-group, input-large">
-            <input type="text" class="form-control" placeholder="Enter a title for your project.">
+            <input type="text" class="form-control" id = "title" placeholder="Enter a title for your project."></input>
           </div>
 
           <h3>Image</h3>
@@ -38,44 +38,44 @@
 
           <h3>Category</h3>
           <div class="input-group, input-large">
-            <input type="text" class="form-control" placeholder="Enter a category...">
+            <input type="text" class="form-control" id = "category" placeholder="Enter a category...">
             <!--Ideally: when you type something, autocomplete will search for a pre-existing category. When you have entered a category that doesn't exist, website will try to find a category that is not there, and otherwise will produce a warning.-->
           </div>
 
           <h3>Project Objective</h3>
           <div class="input-group, input-large">
-            <input type="text" class="form-control" placeholder="Enter the objective for the project. Maximum 200 characters.">
+            <input type="text" class="form-control" id = "objective" placeholder="Enter the objective for the project. Maximum 200 characters.">
           </div>
 
 
           <h3>Github Page</h3>
           <div class="input-group, input-large">
-            <input type="text" class="form-control" placeholder="Enter a Github page for your project if it exists.">
+            <input type="text" class="form-control" id = "gitHub" placeholder="Enter a Github page for your project if it exists.">
           </div>
 
           <h3>Organization</h3>
           <div class="input-group, input-large">
-            <input type="text" class="form-control" placeholder="Enter a name for your organization.">
+            <input type="text" class="form-control" id = "organization" placeholder="Enter a name for your organization.">
           </div>
 
           <h3>People Involved</h3>
           <div class="input-group, input-large">
-            <input type="text" class="form-control" placeholder="Enter others who are involved with this project.">
+            <input type="text" class="form-control" id = "peopleInvolved" placeholder="Enter others who are involved with this project.">
           </div>
 
           <h3>Description</h3>
           <div class="input-group, input-large">
-            <textarea class="form-control" rows="5" placeholder="Enter a description. What do you plan to achieve with this project?"></textarea>
+            <textarea class="form-control" rows="5" id = "description" placeholder="Enter a description. What do you plan to achieve with this project?"></textarea>
           </div>
 
           <h3>Technical Objectives</h3>
           <div class="input-group, input-large">
-            <textarea class="form-control" rows="5" placeholder="Enter examples of coding knowledge necessary to accomplish this project."></textarea>
+            <textarea class="form-control" rows="5" id = "technicalObjectives" placeholder="Enter examples of coding knowledge necessary to accomplish this project."></textarea>
           </div>
 
           <h3>Tags</h3>
           <div class="input-group, input-large">
-            <input type="text" class="form-control" placeholder="Enter some tags. EX: music, social, art, education...">
+            <input type="text" class="form-control" id = "tags" placeholder="Enter some tags. EX: music, social, art, education...">
           </div>
 
           <!--Todo: turn items into pills-->
@@ -102,12 +102,12 @@
       </div>
           <br />
           <p align="center">
-            <button type="button" class="btn btn-primary btn-lg">Submit</button>
+            <button onclick="projectInformation()" type="button" class="btn btn-primary btn-lg" id = "submit">Submit</button>
             <button type="button" class="btn btn-default btn-lg">Save</button>
-
+          
           </p>
           <h4 align="center"> Thank you for your submission! Please wait a few days until a moderator approves your submission.</h4>
-
+          <script src="projectCreate.js"></script>
     </div>
     <!--END MAIN BODY-->
 

@@ -1,6 +1,6 @@
 var xhr = new XMLHttpRequest();
-  xhr.open("POST", "http://rishibedi.apiary.io/project");
-  xhr.setRequestHeader("Content-Type", "application/json");
+xhr.open("POST", "http://rishibedi.apiary.io/project");
+xhr.setRequestHeader("Content-Type", "application/json");
       //xhr.onreadystatechange = function () {
         //if (this.readyState == 4) {
         //  alert('Status: '+this.status+'\nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'\nBody: '+this.responseText);
