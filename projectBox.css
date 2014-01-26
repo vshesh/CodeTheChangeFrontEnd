@@ -1,5 +1,5 @@
 .project {
-    width="150px";
+    width="200px";
     height="400px";
     float:left;
     overflow:hidden;
@@ -10,4 +10,8 @@
 .imageBox {
     width="200px";
     height="100px";
+}
+.projectBoxInfo {
+    width = "200px";
+    height = "200px";
 }
