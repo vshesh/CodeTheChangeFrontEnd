@@ -27,19 +27,22 @@ for(var i = 0; i < 4; i++) {
 	document.write('><a href="' + pages[i] + '">' + titles[i] + '</a></li>');
 }
 
-document.write('<li class="dropdown">');
-document.write('<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>');
-document.write('<ul class="dropdown-menu">');
-document.write('<li><a href="#">Action</a></li>');
-document.write('<li><a href="#">Another action</a></li>');
-document.write('<li><a href="#">Something else here</a></li>');
-document.write('<li class="divider"></li>');
-document.write('<li><a href="#">Separated link</a></li>');
-document.write('<li class="divider"></li>');
-document.write('<li><a href="#">One more separated link</a></li>');
-document.write('</ul></li></ul>');
+//not really being of any use, commenting it out
+
+//document.write('<li class="dropdown">');
+//document.write('<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>');
+//document.write('<ul class="dropdown-menu">');
+//document.write('<li><a href="#">Action</a></li>');
+//document.write('<li><a href="#">Another action</a></li>');
+//document.write('<li><a href="#">Something else here</a></li>');
+//document.write('<li class="divider"></li>');
+//document.write('<li><a href="#">Separated link</a></li>');
+//document.write('<li class="divider"></li>');
+//document.write('<li><a href="#">One more separated link</a></li>');
+//document.write('</ul>')
 
 
+document.write('</li></ul>');
 document.write('<form class="navbar-form navbar-right" role="search">');
 document.write('<div class="form-group">');
 document.write('<input type="text" class="form-control" placeholder="Search"></div>');
