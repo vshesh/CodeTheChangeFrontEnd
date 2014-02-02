@@ -25,7 +25,6 @@ for(var i = 0; i < 4; i++) {
 		document.write(' class="active"');
 	}
 	document.write('><a href="' + pages[i] + '">' + titles[i] + '</a></li>');
-	//<li><a href="pages[i]">titles[i]</a></li>
 }
 
 document.write('<li class="dropdown">');
