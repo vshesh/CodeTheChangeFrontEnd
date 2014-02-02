@@ -6,7 +6,7 @@ document.write('<span class="sr-only">Toggle navigation</span>');
 document.write('<span class="icon-bar"></span>');
 document.write('<span class="icon-bar"></span>');
 document.write('<span class="icon-bar"></span></button>');
-document.write('<a class="navbar-brand" href="login.html">Code The Change</a>');
+document.write('<a class="navbar-brand">Code The Change</a>');
 document.write('</div>');
 
 document.write('<!-- Collect the nav links, forms, and other content for toggling -->');
