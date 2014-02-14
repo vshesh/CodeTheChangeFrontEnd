@@ -8,10 +8,10 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Code the Chnage</title>
+    <title>Code the Change</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
@@ -25,8 +25,8 @@
         <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
-    <link href="signin.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
   </head>
   <!-- NAVBAR
        ================================================== -->
@@ -35,8 +35,7 @@
     <div class="container">
 
       <!-- Header -->
-      <script language = "javascript" type = "text/javascript" src = "alternateHeader.js"></script>
-
+      {{> alternateHeader}}
 
       <!-- Carousel
            ================================================== -->
@@ -127,12 +126,9 @@
 
     </div><!-- /.container -->
     <!-- FOOTER -->
-    <script language = "javascript" type = "text/javascript" src = "footer.js"></script>
+    {{> footer}}
     <!-- Bootstrap core JavaScript
          ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../docs-assets/js/holder.js"></script>
   </body>
 </html>
