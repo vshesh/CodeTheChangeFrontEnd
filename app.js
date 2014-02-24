@@ -40,6 +40,7 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/project/:name', project.viewProject);
+app.get('/developers', function(req, res) {res.render('developers')});
 // Example route
 // app.get('/users', user.list);
 
